@@ -4,15 +4,11 @@ Advanced wafer fabrication for crystal conversion (X). Giving your hands a break
 Convenience comes at a price: level 74 and an extremely demanding power budget.
 Exchange Awakening Crystals between all nine elements at a [b]1:1 ratio[/b]. With power available, each conversion takes one second. Redistribute your late-game stockpile without creating extra crystals.
 
-[h2]Warning: enormous operating power consumption[/h2]
-[list]
-[*][b]Idle: 36,000 per second.[/b] The building draws power even without an exchange order.
-[*][b]Operating total: 576,000 per second.[/b] This includes idle consumption; do not add it again. Equivalent to 192 devices drawing 3,000 per second each.
-[*]Power loss pauses conversion; restoring power resumes it. Completing or cancelling an order returns the machine to idle consumption.
-[/list]
-[b]Author's test: a Pal with maximum work speed and maximum electricity work suitability, paired with a Large Power Generator, could only just keep up.[/b]
-That base also contained 20 oil extractors drawing 3,000/s each, both Pal Resource Factory buildings, and other vanilla buildings. This is a whole-base observation, not a standalone power guarantee for this machine. Stored power can drop rapidly while the Pal eats or leaves its post.
-Prepare substantial generation and storage. An Ancient Civilization Power Generator or multiple generators are potential upgrades; the actual balance depends on Pal capabilities, work uptime, and total base demand.
+[h2]Warning: constant heavy power consumption[/h2]
+[b]Fixed consumption: 360,000 per second, both idle and operating.[/b]
+Equivalent to 120 devices drawing 3,000/s each. There is no cheaper standby mode: simply keeping this machine built puts pressure on the base power grid.
+The original game's energy system handles consumption. Power loss pauses conversion; restoring power resumes it. Prepare substantial generation and storage. Actual power balance depends on Pal capabilities, work uptime, and all other base buildings.
+v0.6.2 replaces the previous two-rate design. Previous generator balance observations do not establish the balance of this new fixed rate; in-game validation is pending.
 
 [h2]Unlock and use[/h2]
 [list]
@@ -45,15 +41,11 @@ Before uninstalling, back up your save, collect your items, and dismantle the mo
 方便歸方便，代價還是要付：74 級才開放，還得供得起這台吃電怪獸。
 將九種屬性的覺醒晶石以 1：1 互相兌換。供電充足時每秒完成一顆，方便調整後期晶石庫存；不會憑空增加晶石數量。
 
-[h2]注意：運轉耗電量驚人[/h2]
-[list]
-[*][b]待機耗電：36,000／秒。[/b] 即使沒有兌換訂單，建築仍會持續增加基地用電負擔。
-[*][b]運轉總耗電：576,000／秒。[/b] 這是工作時的總值，不再另加待機耗電；相當於 192 台每秒耗電 3,000 的設備。
-[*]停電會暫停兌換，恢復供電後繼續。完成或取消訂單後回到待機耗電。
-[/list]
-[b]作者實測：滿工作速度、滿發電適應性的帕魯，搭配大型發電機也僅勉強支撐。[/b]
-這是在同一基地另有 20 座各耗電 3,000／秒的油田、帕魯資源工廠的兩台設備及其他原版建築的情況下測試，並非這台機器單獨運作的供電保證。帕魯吃飯或離開發電崗位時，儲備電量可能快速下降。
-請準備充足發電與蓄電能力；更高階的古代文明發電機或多機供電，是可考慮的升級方向。實際收支仍取決於帕魯能力、工作狀態與整個基地的負載。
+[h2]注意：持續高耗電[/h2]
+[b]待機與運轉均固定耗電 360,000／秒。[/b]
+相當於 120 台每秒耗電 3,000 的設備。沒有較便宜的待機模式：光是放在基地裡，就會持續帶來供電壓力。
+由原版能源系統扣電；缺電暫停轉換，恢復供電後繼續。請準備充足發電與蓄電能力，實際收支取決於帕魯能力、工作狀態及基地其他設備。
+v0.6.2 已改為固定耗電，先前兩段耗電的發電機實測不代表新版平衡；這個固定數值仍待遊戲內驗證。
 
 [h2]解鎖與使用[/h2]
 [list]

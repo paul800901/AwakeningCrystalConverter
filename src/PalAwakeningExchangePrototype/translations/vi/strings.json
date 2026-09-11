@@ -3,12 +3,12 @@
     "MAPOBJECT_NAME_PAE_ExchangePrototype": "Máy chuyển đổi Tinh thể Thức tỉnh"
   },
   "DT_BuildObjectDescText": {
-    "BUILDOBJECT_DESC_PAE_ExchangePrototype": "Đổi Tinh thể Thức tỉnh giữa chín hệ theo tỉ lệ 1:1. Khi có điện, máy tạo một tinh thể mỗi giây. Điện chờ: 36.000/giây; tổng điện khi vận hành: 576.000/giây. Máy tạm dừng khi mất điện và tiếp tục khi có điện trở lại."
+    "BUILDOBJECT_DESC_PAE_ExchangePrototype": "Đổi Tinh thể Thức tỉnh giữa chín hệ theo tỉ lệ 1:1. Khi có điện, máy tạo một tinh thể mỗi giây. Tiêu thụ điện cố định khi chờ và vận hành: 360.000/giây. Máy tạm dừng khi mất điện và tiếp tục khi có điện trở lại."
   },
   "DT_TechnologyNameText": {
     "NAME_RECIPE_PAE_ExchangePrototype": "Máy chuyển đổi Tinh thể Thức tỉnh"
   },
   "DT_TechnologyDescText": {
-    "DESC_RECIPE_PAE_ExchangePrototype": "Đổi Tinh thể Thức tỉnh giữa chín hệ theo tỉ lệ 1:1. Khi có điện, máy tạo một tinh thể mỗi giây. Điện chờ: 36.000/giây; tổng điện khi vận hành: 576.000/giây. Máy tạm dừng khi mất điện và tiếp tục khi có điện trở lại."
+    "DESC_RECIPE_PAE_ExchangePrototype": "Đổi Tinh thể Thức tỉnh giữa chín hệ theo tỉ lệ 1:1. Khi có điện, máy tạo một tinh thể mỗi giây. Tiêu thụ điện cố định khi chờ và vận hành: 360.000/giây. Máy tạm dừng khi mất điện và tiếp tục khi có điện trở lại."
   }
 }

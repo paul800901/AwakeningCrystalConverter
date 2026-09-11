@@ -1,7 +1,7 @@
 {
   "PAE_ExchangePrototype": {
     "Name": "屬性晶石轉換機",
-    "Description": "將九種屬性的覺醒晶石以 1：1 互相兌換，供電充足時每秒完成一顆。待機耗電 36,000／秒；運轉時總耗電 576,000／秒。停電暫停，恢復供電後繼續。",
+    "Description": "將九種屬性的覺醒晶石以 1：1 互相兌換，供電充足時每秒完成一顆。待機與運轉均固定耗電 360,000／秒。停電暫停，恢復供電後繼續。",
     "BlueprintClassName": "BP_PAE_ExchangePrototype",
     "BlueprintClassSoft": "/Game/PalAwakeningExchange/BP_PAE_ExchangePrototype.BP_PAE_ExchangePrototype_C",
     "IconTexture": "/Game/PalAwakeningExchange/WaferV2/T_PAE_ConverterIcon.T_PAE_ConverterIcon",
@@ -17,7 +17,7 @@
       "Rank": 1,
       "RequiredBuildWorkAmount": 1000000,
       "RequiredEnergyType": "Electric",
-      "ConsumeEnergySpeed": 36000,
+      "ConsumeEnergySpeed": 360000,
       "bIsInstallOnlyOnBase": true,
       "Material1_Id": "WorldTreeIngot",
       "Material1_Count": 150,
@@ -39,7 +39,7 @@
     ],
     "Technology": {
       "Name": "屬性晶石轉換機",
-      "Description": "將九種屬性的覺醒晶石以 1：1 互相兌換，供電充足時每秒完成一顆。待機耗電 36,000／秒；運轉時總耗電 576,000／秒。停電暫停，恢復供電後繼續。",
+      "Description": "將九種屬性的覺醒晶石以 1：1 互相兌換，供電充足時每秒完成一顆。待機與運轉均固定耗電 360,000／秒。停電暫停，恢復供電後繼續。",
       "UnlockBuildObjects": [
         "PAE_ExchangePrototype"
       ],

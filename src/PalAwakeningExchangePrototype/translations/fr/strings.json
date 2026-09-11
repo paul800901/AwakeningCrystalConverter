@@ -3,12 +3,12 @@
     "MAPOBJECT_NAME_PAE_ExchangePrototype": "Convertisseur de cristaux d’éveil"
   },
   "DT_BuildObjectDescText": {
-    "BUILDOBJECT_DESC_PAE_ExchangePrototype": "Échange les cristaux d’éveil entre neuf éléments à raison de 1 pour 1. Produit un cristal par seconde sous tension. Consommation au repos : 36 000/s ; consommation totale en fonctionnement : 576 000/s. Se met en pause sans courant et reprend au retour du courant."
+    "BUILDOBJECT_DESC_PAE_ExchangePrototype": "Échange les cristaux d’éveil entre neuf éléments à raison de 1 pour 1. Produit un cristal par seconde sous tension. Consommation fixe au repos comme en fonctionnement : 360 000/s. Se met en pause sans courant et reprend au retour du courant."
   },
   "DT_TechnologyNameText": {
     "NAME_RECIPE_PAE_ExchangePrototype": "Convertisseur de cristaux d’éveil"
   },
   "DT_TechnologyDescText": {
-    "DESC_RECIPE_PAE_ExchangePrototype": "Échange les cristaux d’éveil entre neuf éléments à raison de 1 pour 1. Produit un cristal par seconde sous tension. Consommation au repos : 36 000/s ; consommation totale en fonctionnement : 576 000/s. Se met en pause sans courant et reprend au retour du courant."
+    "DESC_RECIPE_PAE_ExchangePrototype": "Échange les cristaux d’éveil entre neuf éléments à raison de 1 pour 1. Produit un cristal par seconde sous tension. Consommation fixe au repos comme en fonctionnement : 360 000/s. Se met en pause sans courant et reprend au retour du courant."
   }
 }

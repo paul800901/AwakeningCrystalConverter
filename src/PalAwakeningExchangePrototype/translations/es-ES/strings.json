@@ -3,12 +3,12 @@
     "MAPOBJECT_NAME_PAE_ExchangePrototype": "Convertidor de cristales de despertar"
   },
   "DT_BuildObjectDescText": {
-    "BUILDOBJECT_DESC_PAE_ExchangePrototype": "Intercambia cristales de despertar entre nueve elementos en una proporción de 1:1. Produce un cristal por segundo cuando recibe energía. Consumo en espera: 36.000/s; consumo total en funcionamiento: 576.000/s. Se pausa sin electricidad y continúa cuando vuelve."
+    "BUILDOBJECT_DESC_PAE_ExchangePrototype": "Intercambia cristales de despertar entre nueve elementos en una proporción de 1:1. Produce un cristal por segundo cuando recibe energía. Consumo fijo en espera y en funcionamiento: 360.000/s. Se pausa sin electricidad y continúa cuando vuelve."
   },
   "DT_TechnologyNameText": {
     "NAME_RECIPE_PAE_ExchangePrototype": "Convertidor de cristales de despertar"
   },
   "DT_TechnologyDescText": {
-    "DESC_RECIPE_PAE_ExchangePrototype": "Intercambia cristales de despertar entre nueve elementos en una proporción de 1:1. Produce un cristal por segundo cuando recibe energía. Consumo en espera: 36.000/s; consumo total en funcionamiento: 576.000/s. Se pausa sin electricidad y continúa cuando vuelve."
+    "DESC_RECIPE_PAE_ExchangePrototype": "Intercambia cristales de despertar entre nueve elementos en una proporción de 1:1. Produce un cristal por segundo cuando recibe energía. Consumo fijo en espera y en funcionamiento: 360.000/s. Se pausa sin electricidad y continúa cuando vuelve."
   }
 }

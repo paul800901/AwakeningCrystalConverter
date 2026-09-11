@@ -1,7 +1,7 @@
 {
   "en": {
     "machine_name": "Awakening Crystal Converter",
-    "description": "Exchange Awakening Crystals between nine elements at a 1:1 ratio. Produces one crystal per second while powered. Idle power: 36,000/s; total operating power: 576,000/s. Pauses without power and resumes when power returns.",
+    "description": "Exchange Awakening Crystals between nine elements at a 1:1 ratio. Produces one crystal per second while powered. Fixed power consumption, idle or operating: 360,000/s. Pauses without power and resumes when power returns.",
     "receive": "Receive ",
     "payment_prompt": "Click a crystal below to spend, then set the quantity",
     "selected": "Selected: ",
@@ -11,7 +11,7 @@
   },
   "zh-Hans": {
     "machine_name": "属性晶石转换机",
-    "description": "将九种属性的觉醒晶石以 1：1 互相兑换，供电充足时每秒完成一颗。待机耗电 36,000／秒；运转时总耗电 576,000／秒。停电暂停，恢复供电后继续。",
+    "description": "将九种属性的觉醒晶石以 1：1 互相兑换，供电充足时每秒完成一颗。待机与运转均固定耗电 360,000／秒。停电暂停，恢复供电后继续。",
     "receive": "想取得 ",
     "payment_prompt": "点选下方要消耗的晶石，再设定兑换数量",
     "selected": "已选择：",
@@ -21,7 +21,7 @@
   },
   "zh-Hant": {
     "machine_name": "屬性晶石轉換機",
-    "description": "將九種屬性的覺醒晶石以 1：1 互相兌換，供電充足時每秒完成一顆。待機耗電 36,000／秒；運轉時總耗電 576,000／秒。停電暫停，恢復供電後繼續。",
+    "description": "將九種屬性的覺醒晶石以 1：1 互相兌換，供電充足時每秒完成一顆。待機與運轉均固定耗電 360,000／秒。停電暫停，恢復供電後繼續。",
     "receive": "想取得 ",
     "payment_prompt": "點選下方要消耗的晶石，再設定兌換數量",
     "selected": "已選擇：",
@@ -31,7 +31,7 @@
   },
   "ja": {
     "machine_name": "覚醒晶石交換機",
-    "description": "9属性の覚醒晶石を1:1で交換します。通電中は1秒に1個を生産します。待機時の消費電力は36,000/秒、稼働時の総消費電力は576,000/秒です。停電中は停止し、復電すると再開します。",
+    "description": "9属性の覚醒晶石を1:1で交換します。通電中は1秒に1個を生産します。待機中も稼働中も消費電力は360,000/秒です。停電中は停止し、復電すると再開します。",
     "receive": "取得：",
     "payment_prompt": "下の晶石を選んで消費し、交換数を設定してください",
     "selected": "選択中：",
@@ -41,7 +41,7 @@
   },
   "fr": {
     "machine_name": "Convertisseur de cristaux d’éveil",
-    "description": "Échange les cristaux d’éveil entre neuf éléments à raison de 1 pour 1. Produit un cristal par seconde sous tension. Consommation au repos : 36 000/s ; consommation totale en fonctionnement : 576 000/s. Se met en pause sans courant et reprend au retour du courant.",
+    "description": "Échange les cristaux d’éveil entre neuf éléments à raison de 1 pour 1. Produit un cristal par seconde sous tension. Consommation fixe au repos comme en fonctionnement : 360 000/s. Se met en pause sans courant et reprend au retour du courant.",
     "receive": "Obtenir : ",
     "payment_prompt": "Cliquez sur un cristal ci-dessous à dépenser, puis définissez la quantité",
     "selected": "Sélection : ",
@@ -51,7 +51,7 @@
   },
   "it": {
     "machine_name": "Convertitore di cristalli del risveglio",
-    "description": "Scambia i cristalli del risveglio tra nove elementi con rapporto 1:1. Produce un cristallo al secondo quando è alimentato. Consumo in attesa: 36.000/s; consumo totale in funzione: 576.000/s. Si arresta senza energia e riprende quando torna.",
+    "description": "Scambia i cristalli del risveglio tra nove elementi con rapporto 1:1. Produce un cristallo al secondo quando è alimentato. Consumo fisso in attesa e in funzione: 360.000/s. Si arresta senza energia e riprende quando torna.",
     "receive": "Ottieni: ",
     "payment_prompt": "Seleziona qui sotto un cristallo da consumare, poi imposta la quantità",
     "selected": "Selezionato: ",
@@ -61,7 +61,7 @@
   },
   "de": {
     "machine_name": "Erweckungskristall-Konverter",
-    "description": "Tauscht Erweckungskristalle zwischen neun Elementen im Verhältnis 1:1. Erzeugt bei Stromversorgung einen Kristall pro Sekunde. Leerlaufverbrauch: 36.000/s; Gesamtverbrauch im Betrieb: 576.000/s. Pausiert bei Stromausfall und setzt bei der Rückkehr des Stroms fort.",
+    "description": "Tauscht Erweckungskristalle zwischen neun Elementen im Verhältnis 1:1. Erzeugt bei Stromversorgung einen Kristall pro Sekunde. Fester Stromverbrauch im Leerlauf und im Betrieb: 360.000/s. Pausiert bei Stromausfall und setzt bei der Rückkehr des Stroms fort.",
     "receive": "Erhalten: ",
     "payment_prompt": "Wähle unten einen Kristall zum Verbrauch und lege dann die Menge fest",
     "selected": "Ausgewählt: ",
@@ -71,7 +71,7 @@
   },
   "es": {
     "machine_name": "Convertidor de cristales de despertar",
-    "description": "Intercambia cristales de despertar entre nueve elementos en una proporción de 1:1. Produce un cristal por segundo cuando recibe energía. Consumo en espera: 36.000/s; consumo total en funcionamiento: 576.000/s. Se pausa sin electricidad y continúa cuando vuelve.",
+    "description": "Intercambia cristales de despertar entre nueve elementos en una proporción de 1:1. Produce un cristal por segundo cuando recibe energía. Consumo fijo en espera y en funcionamiento: 360.000/s. Se pausa sin electricidad y continúa cuando vuelve.",
     "receive": "Obtener: ",
     "payment_prompt": "Haz clic en un cristal de abajo para gastarlo y después establece la cantidad",
     "selected": "Seleccionado: ",
@@ -81,7 +81,7 @@
   },
   "pt-BR": {
     "machine_name": "Conversor de Cristais do Despertar",
-    "description": "Troca Cristais do Despertar entre nove elementos na proporção de 1:1. Produz um cristal por segundo quando energizado. Consumo em espera: 36.000/s; consumo total em operação: 576.000/s. Pausa sem energia e retoma quando ela volta.",
+    "description": "Troca Cristais do Despertar entre nove elementos na proporção de 1:1. Produz um cristal por segundo quando energizado. Consumo fixo em espera e em operação: 360.000/s. Pausa sem energia e retoma quando ela volta.",
     "receive": "Obter: ",
     "payment_prompt": "Clique abaixo em um cristal para gastar e depois defina a quantidade",
     "selected": "Selecionado: ",
@@ -91,7 +91,7 @@
   },
   "ru": {
     "machine_name": "Конвертер кристаллов пробуждения",
-    "description": "Обменивает кристаллы пробуждения между девятью стихиями в соотношении 1:1. При наличии питания производит один кристалл в секунду. Потребление в режиме ожидания: 36 000/с; общее потребление при работе: 576 000/с. При отключении питания приостанавливается и продолжает работу после восстановления.",
+    "description": "Обменивает кристаллы пробуждения между девятью стихиями в соотношении 1:1. При наличии питания производит один кристалл в секунду. Постоянное потребление в ожидании и при работе: 360 000/с. При отключении питания приостанавливается и продолжает работу после восстановления.",
     "receive": "Получить: ",
     "payment_prompt": "Выберите ниже кристалл для расхода, затем задайте количество",
     "selected": "Выбрано: ",
@@ -101,7 +101,7 @@
   },
   "ko": {
     "machine_name": "각성 결정 변환기",
-    "description": "9가지 속성의 각성 결정을 1:1 비율로 교환합니다. 전력이 공급되면 초당 결정 1개를 생산합니다. 대기 전력: 36,000/초, 작동 중 총 전력: 576,000/초. 정전 시 일시 정지하고 전력이 복구되면 재개합니다.",
+    "description": "9가지 속성의 각성 결정을 1:1 비율로 교환합니다. 전력이 공급되면 초당 결정 1개를 생산합니다. 대기 및 작동 시 고정 소비 전력: 360,000/초. 정전 시 일시 정지하고 전력이 복구되면 재개합니다.",
     "receive": "획득: ",
     "payment_prompt": "아래에서 소비할 결정을 선택한 다음 교환 수량을 설정하세요",
     "selected": "선택됨: ",
@@ -111,7 +111,7 @@
   },
   "id": {
     "machine_name": "Konverter Kristal Kebangkitan",
-    "description": "Menukar Kristal Kebangkitan dari sembilan elemen dengan rasio 1:1. Menghasilkan satu kristal per detik saat dialiri daya. Daya siaga: 36.000/detik; total daya operasi: 576.000/detik. Berhenti saat listrik padam dan melanjutkan saat daya pulih.",
+    "description": "Menukar Kristal Kebangkitan dari sembilan elemen dengan rasio 1:1. Menghasilkan satu kristal per detik saat dialiri daya. Konsumsi daya tetap saat siaga maupun beroperasi: 360.000/detik. Berhenti saat listrik padam dan melanjutkan saat daya pulih.",
     "receive": "Ambil: ",
     "payment_prompt": "Pilih kristal yang akan digunakan di bawah, lalu atur jumlahnya",
     "selected": "Dipilih: ",
@@ -121,7 +121,7 @@
   },
   "es-419": {
     "machine_name": "Convertidor de cristales de despertar",
-    "description": "Intercambia cristales de despertar entre nueve elementos en una proporción de 1:1. Produce un cristal por segundo cuando tiene energía. Consumo en espera: 36.000/s; consumo total en operación: 576.000/s. Se pausa sin electricidad y continúa cuando se restablece.",
+    "description": "Intercambia cristales de despertar entre nueve elementos en una proporción de 1:1. Produce un cristal por segundo cuando tiene energía. Consumo fijo en espera y en operación: 360.000/s. Se pausa sin electricidad y continúa cuando se restablece.",
     "receive": "Obtener: ",
     "payment_prompt": "Haz clic abajo en un cristal para gastarlo y luego establece la cantidad",
     "selected": "Seleccionado: ",
@@ -131,7 +131,7 @@
   },
   "th": {
     "machine_name": "เครื่องแลกเปลี่ยนคริสตัลปลุกพลัง",
-    "description": "แลกเปลี่ยนคริสตัลปลุกพลังระหว่างธาตุทั้งเก้าในอัตรา 1:1 ผลิตคริสตัลหนึ่งชิ้นต่อวินาทีเมื่อมีไฟฟ้า ใช้ไฟขณะรอ 36,000/วินาที ใช้ไฟรวมขณะทำงาน 576,000/วินาที หยุดชั่วคราวเมื่อไฟดับและทำงานต่อเมื่อไฟกลับมา",
+    "description": "แลกเปลี่ยนคริสตัลปลุกพลังระหว่างธาตุทั้งเก้าในอัตรา 1:1 ผลิตคริสตัลหนึ่งชิ้นต่อวินาทีเมื่อมีไฟฟ้า ใช้ไฟคงที่ 360,000/วินาที ทั้งขณะรอและขณะทำงาน หยุดชั่วคราวเมื่อไฟดับและทำงานต่อเมื่อไฟกลับมา",
     "receive": "รับ: ",
     "payment_prompt": "เลือกคริสตัลที่จะใช้ด้านล่าง แล้วตั้งจำนวนที่ต้องการแลก",
     "selected": "เลือกแล้ว: ",
@@ -141,7 +141,7 @@
   },
   "tr": {
     "machine_name": "Uyanış Kristali Dönüştürücü",
-    "description": "Dokuz element arasındaki Uyanış Kristallerini 1:1 oranında dönüştürür. Güç varken saniyede bir kristal üretir. Bekleme gücü: 36.000/sn; çalışırken toplam güç: 576.000/sn. Elektrik kesilince duraklar ve güç geri gelince devam eder.",
+    "description": "Dokuz element arasındaki Uyanış Kristallerini 1:1 oranında dönüştürür. Güç varken saniyede bir kristal üretir. Beklerken ve çalışırken sabit güç tüketimi: 360.000/sn. Elektrik kesilince duraklar ve güç geri gelince devam eder.",
     "receive": "Al: ",
     "payment_prompt": "Aşağıdan harcanacak kristali seçin, sonra miktarı ayarlayın",
     "selected": "Seçildi: ",
@@ -151,7 +151,7 @@
   },
   "vi": {
     "machine_name": "Máy chuyển đổi Tinh thể Thức tỉnh",
-    "description": "Đổi Tinh thể Thức tỉnh giữa chín hệ theo tỉ lệ 1:1. Khi có điện, máy tạo một tinh thể mỗi giây. Điện chờ: 36.000/giây; tổng điện khi vận hành: 576.000/giây. Máy tạm dừng khi mất điện và tiếp tục khi có điện trở lại.",
+    "description": "Đổi Tinh thể Thức tỉnh giữa chín hệ theo tỉ lệ 1:1. Khi có điện, máy tạo một tinh thể mỗi giây. Tiêu thụ điện cố định khi chờ và vận hành: 360.000/giây. Máy tạm dừng khi mất điện và tiếp tục khi có điện trở lại.",
     "receive": "Nhận: ",
     "payment_prompt": "Chọn tinh thể sẽ dùng ở bên dưới, sau đó đặt số lượng đổi",
     "selected": "Đã chọn: ",
@@ -161,7 +161,7 @@
   },
   "pl": {
     "machine_name": "Konwerter kryształów przebudzenia",
-    "description": "Wymienia kryształy przebudzenia między dziewięcioma żywiołami w stosunku 1:1. Przy zasilaniu wytwarza jeden kryształ na sekundę. Pobór w trybie czuwania: 36 000/s; całkowity pobór podczas pracy: 576 000/s. Bez prądu zatrzymuje się i wznawia pracę po jego powrocie.",
+    "description": "Wymienia kryształy przebudzenia między dziewięcioma żywiołami w stosunku 1:1. Przy zasilaniu wytwarza jeden kryształ na sekundę. Stały pobór mocy w trybie czuwania i podczas pracy: 360 000/s. Bez prądu zatrzymuje się i wznawia pracę po jego powrocie.",
     "receive": "Odbierz: ",
     "payment_prompt": "Wybierz poniżej kryształ do zużycia, a następnie ustaw liczbę wymian",
     "selected": "Wybrano: ",

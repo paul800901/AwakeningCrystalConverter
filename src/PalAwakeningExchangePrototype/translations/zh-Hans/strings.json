@@ -3,12 +3,12 @@
     "MAPOBJECT_NAME_PAE_ExchangePrototype": "属性晶石转换机"
   },
   "DT_BuildObjectDescText": {
-    "BUILDOBJECT_DESC_PAE_ExchangePrototype": "将九种属性的觉醒晶石以 1：1 互相兑换，供电充足时每秒完成一颗。待机耗电 36,000／秒；运转时总耗电 576,000／秒。停电暂停，恢复供电后继续。"
+    "BUILDOBJECT_DESC_PAE_ExchangePrototype": "将九种属性的觉醒晶石以 1：1 互相兑换，供电充足时每秒完成一颗。待机与运转均固定耗电 360,000／秒。停电暂停，恢复供电后继续。"
   },
   "DT_TechnologyNameText": {
     "NAME_RECIPE_PAE_ExchangePrototype": "属性晶石转换机"
   },
   "DT_TechnologyDescText": {
-    "DESC_RECIPE_PAE_ExchangePrototype": "将九种属性的觉醒晶石以 1：1 互相兑换，供电充足时每秒完成一颗。待机耗电 36,000／秒；运转时总耗电 576,000／秒。停电暂停，恢复供电后继续。"
+    "DESC_RECIPE_PAE_ExchangePrototype": "将九种属性的觉醒晶石以 1：1 互相兑换，供电充足时每秒完成一颗。待机与运转均固定耗电 360,000／秒。停电暂停，恢复供电后继续。"
   }
 }

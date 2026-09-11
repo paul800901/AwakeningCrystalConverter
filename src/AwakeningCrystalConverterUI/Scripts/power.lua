@@ -1,21 +1,10 @@
--- Optional native EnergyModule rate probe for the single converter.
--- Load with: local power = require("power")  -- starts once
--- This is deliberately independent from main.lua.
+-- Work-light presentation only; original game owns all power consumption.
 local M = {}
 
 local MACHINE_ID = "PAE_ExchangePrototype"
 local MODEL_CLASS = "/Script/Pal.PalMapObjectConvertItemModel"
-local ENERGY_CLASS = "/Script/Pal.PalMapObjectEnergyModule"
-local REFRESH_MS = 100
-local DISCOVERY_TICKS = 10
-local IDLE_RATE = 36000.0
-local WORKING_RATE = 576000.0
 local CONSTRUCTED_STATE_MIN = 3
 
-local running = false
-local loop_handle = nil
-local discover_countdown = 0
-local models = {}
 local reported = {}
 local visual_seen = {}
 
@@ -117,51 +106,6 @@ local function remain_num(model, key)
     return value
 end
 
-local function write_energy(module, rate, key)
-    if not valid(module) then
-        warn_once(key .. ":module", key .. " EnergyModule unavailable; no module created")
-        return false, false
-    end
-    local ok_class, class_match = pcall(function() return module:IsA(ENERGY_CLASS) end)
-    if not ok_class or class_match ~= true then
-        warn_once(key .. ":module-class", key .. " returned a non-EnergyModule; skipped")
-        return false, false
-    end
-
-    local ok_write, write_error = pcall(function()
-        module.ConsumeEnergySpeed = rate
-        module.CurrentConsumeEnergySpeed = rate
-        module.bRequiredConsumeEnergy = true
-    end)
-    if not ok_write then
-        warn_once(key .. ":write", key .. " EnergyModule property write failed: " .. tostring(write_error))
-        return false, false
-    end
-
-    local ok_power, powered = invoke(module, "CanConsumeEnergy")
-    if not ok_power then
-        warn_once(key .. ":can-consume", key .. " CanConsumeEnergy unavailable after write")
-        powered = false
-    end
-
-    local ok_current, current = invoke(module, "GetCurrentConsumeEnergySpeed")
-    current = unwrap(current)
-    local ok_base, base = invoke(module, "GetConsumeEnergySpeed")
-    base = unwrap(base)
-    local ok_required, required = invoke(module, "IsRequiredEnergy")
-    required = unwrap(required)
-    if not (ok_current and ok_base and ok_required)
-        or type(current) ~= "number"
-        or type(base) ~= "number"
-        or current ~= rate
-        or base ~= rate
-        or required ~= true then
-        warn_once(key .. ":readback", key .. " EnergyModule readback mismatch")
-        return false, powered == true
-    end
-    return true, powered == true
-end
-
 local function refresh_visual(actor, working, powered, key)
     -- Visuals are optional and only touched when the visible state changes.
     -- A working glow requires both work and native CanConsumeEnergy().
@@ -211,134 +155,33 @@ local function refresh_visual(actor, working, powered, key)
 end
 
 local function refresh(model)
-    local key = model_key(model)
     if not own(model) then return end
+    local key = model_key(model)
     local actor = actor_of(model, key)
     if not actor then return end
     local remain = remain_num(model, key)
-    if remain == nil then return end
-
-    local ok_module, module = invoke(model, "GetEnergyModule")
-    if not ok_module or not valid(module) then
-        warn_once(key .. ":module", key .. " EnergyModule unavailable; no module created")
-        return
-    end
-    local working = remain > 0
-    local rate = working and WORKING_RATE or IDLE_RATE
-    local wrote, powered = write_energy(module, rate, key)
-    if not wrote then return end
-    local state = tostring(rate) .. ":" .. tostring(powered)
-    local state_key = key .. ":state"
-    if reported[state_key] ~= state then
-        reported[state_key] = state
-        log("STATE id=" .. MACHINE_ID
-            .. " remain=" .. tostring(remain)
-            .. " rate=" .. tostring(rate)
-            .. " powered=" .. tostring(powered)
-            .. " fields=readback")
-    end
-    refresh_visual(actor, working, powered, key)
+    local ok, energy = invoke(model, "GetEnergyModule")
+    if remain == nil or not ok or not valid(energy) then return end
+    local power_ok, powered = invoke(energy, "CanConsumeEnergy")
+    if power_ok then refresh_visual(actor, remain > 0, powered == true, key) end
 end
 
-local function discover()
-    local ok, found = pcall(FindAllOf, "PalMapObjectConvertItemModel")
-    if not ok then
-        warn_once("discover", "FindAllOf PalMapObjectConvertItemModel unavailable")
-        return
-    end
-    if type(found) == "table" then
-        for _, model in pairs(found) do
-            if own(model) then models[model_key(model)] = model end
-        end
-    elseif found ~= nil then
-        warn_once("discover-shape", "FindAllOf PalMapObjectConvertItemModel returned an unexpected value")
-        return
-    end
-    for key, model in pairs(models) do
-        if not valid(model) then models[key] = nil end
-    end
+-- Visual events only. Native BuildingData owns the fixed power rate.
+-- No timers, global discovery, energy writes, or verification polling.
+local function on_event(context)
+    local ok, err = pcall(function() refresh(context:get()) end)
+    if not ok then warn_once("event", "visual event: " .. tostring(err)) end
 end
-
-local function tick()
-    if not running then return end
-    discover_countdown = discover_countdown - 1
-    if discover_countdown <= 0 then
-        discover_countdown = DISCOVERY_TICKS
-        discover()
-    end
-    for key, model in pairs(models) do
-        local ok, err = pcall(refresh, model)
-        if not ok then warn_once(key .. ":refresh", key .. " refresh disabled after error: " .. tostring(err)) end
-    end
+for _, event in ipairs({
+    "ChangeRecipe_ServerInternal", "OnStartWorkAnyone_ServerInternal",
+    "OnFinishWorkInServer", "Cancel_ServerInternal",
+    "OnUpdateEnergyModuleState", "OnReadyStatusHUDModule",
+    "OnRep_IsWorkable", "OnRep_RemainProductNum",
+}) do
+    local path = MODEL_CLASS .. ":" .. event
+    local ok, fn = pcall(StaticFindObject, path)
+    if ok and valid(fn) then RegisterHook(path, function() end, on_event) end
 end
-
-local function register_refresh_hooks()
-    local paths = {
-        "/Script/Pal.PalMapObjectConvertItemModel:ChangeRecipe_ServerInternal",
-        "/Script/Pal.PalMapObjectConvertItemModel:OnStartWorkAnyone_ServerInternal",
-        "/Script/Pal.PalMapObjectConvertItemModel:OnFinishWorkInServer",
-        "/Script/Pal.PalMapObjectConvertItemModel:Cancel_ServerInternal",
-    }
-    for _, path in ipairs(paths) do
-        local ok_exists, fn = pcall(StaticFindObject, path)
-        if ok_exists and valid(fn) then
-            local ok_hook = pcall(RegisterHook, path, function() end, function(context)
-                local model = context:get()
-                if own(model) then
-                    models[model_key(model)] = model
-                    pcall(refresh, model)
-                end
-            end)
-            if not ok_hook then warn_once("hook:" .. path, "refresh hook unavailable: " .. path) end
-        end
-    end
-end
-
-function M.start()
-    if running then return true end
-    if type(LoopInGameThreadWithDelay) ~= "function" then
-        log("LoopInGameThreadWithDelay unavailable; power probe not started")
-        return false
-    end
-    running = true
-    discover_countdown = 0
-    register_refresh_hooks()
-    local ok, handle = pcall(LoopInGameThreadWithDelay, REFRESH_MS, function()
-        -- UE4SS executes this delayed callback on the game thread.
-        local done, err = pcall(tick)
-        if not done then warn_once("tick", "tick failed: " .. tostring(err)) end
-    end)
-    if not ok then
-        running = false
-        log("power probe timer failed: " .. tostring(handle))
-        return false
-    end
-    loop_handle = handle
-    log("START id=" .. MACHINE_ID .. " refresh=100ms discover=1000ms idle=36000 working=576000")
-    return true
-end
-
-function M.stop()
-    running = false
-    if loop_handle ~= nil and type(CancelDelayedAction) == "function" then
-        pcall(CancelDelayedAction, loop_handle)
-    end
-    loop_handle = nil
-    models = {}
-    visual_seen = {}
-end
-
-function M.refresh_now()
-    local ok, err = pcall(function()
-        discover()
-        for _, model in pairs(models) do refresh(model) end
-    end)
-    return ok, err
-end
-
-function M.reset_visuals()
-    visual_seen = {}
-end
-
-M.start()
+function M.reset_visuals() visual_seen = {} end
+log("Native fixed power; event-driven work lights only")
 return M

@@ -3,12 +3,12 @@
     "MAPOBJECT_NAME_PAE_ExchangePrototype": "Erweckungskristall-Konverter"
   },
   "DT_BuildObjectDescText": {
-    "BUILDOBJECT_DESC_PAE_ExchangePrototype": "Tauscht Erweckungskristalle zwischen neun Elementen im Verhältnis 1:1. Erzeugt bei Stromversorgung einen Kristall pro Sekunde. Leerlaufverbrauch: 36.000/s; Gesamtverbrauch im Betrieb: 576.000/s. Pausiert bei Stromausfall und setzt bei der Rückkehr des Stroms fort."
+    "BUILDOBJECT_DESC_PAE_ExchangePrototype": "Tauscht Erweckungskristalle zwischen neun Elementen im Verhältnis 1:1. Erzeugt bei Stromversorgung einen Kristall pro Sekunde. Fester Stromverbrauch im Leerlauf und im Betrieb: 360.000/s. Pausiert bei Stromausfall und setzt bei der Rückkehr des Stroms fort."
   },
   "DT_TechnologyNameText": {
     "NAME_RECIPE_PAE_ExchangePrototype": "Erweckungskristall-Konverter"
   },
   "DT_TechnologyDescText": {
-    "DESC_RECIPE_PAE_ExchangePrototype": "Tauscht Erweckungskristalle zwischen neun Elementen im Verhältnis 1:1. Erzeugt bei Stromversorgung einen Kristall pro Sekunde. Leerlaufverbrauch: 36.000/s; Gesamtverbrauch im Betrieb: 576.000/s. Pausiert bei Stromausfall und setzt bei der Rückkehr des Stroms fort."
+    "DESC_RECIPE_PAE_ExchangePrototype": "Tauscht Erweckungskristalle zwischen neun Elementen im Verhältnis 1:1. Erzeugt bei Stromversorgung einen Kristall pro Sekunde. Fester Stromverbrauch im Leerlauf und im Betrieb: 360.000/s. Pausiert bei Stromausfall und setzt bei der Rückkehr des Stroms fort."
   }
 }

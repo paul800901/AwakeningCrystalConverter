@@ -8,7 +8,7 @@ for _, language in ipairs(locale.languages) do
     local exchange = locale.format(language, 'spend_receive', 'SOURCE', 'TARGET')
     assert(exchange:find('SOURCE', 1, true) and exchange:find('TARGET', 1, true))
     assert(not exchange:find('{source}', 1, true) and not exchange:find('{target}', 1, true))
-    assert(text.description:find('36', 1, true) and text.description:find('576', 1, true))
+    assert(text.description:find('360', 1, true) and not text.description:find('576', 1, true))
 end
 assert(locale.resolve('zh-TW') == 'zh-Hant')
 assert(locale.resolve('zh_CN') == 'zh-Hans')

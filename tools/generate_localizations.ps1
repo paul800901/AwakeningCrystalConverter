@@ -47,7 +47,7 @@ foreach ($language in $languages) {
     foreach ($element in $elementIds) {
         if (!$strings.elements.ContainsKey($element) -or [string]::IsNullOrWhiteSpace([string]$strings.elements[$element])) { throw "Missing element: $language/$element" }
     }
-    foreach ($pattern in @('36[,. ]?000','576[,. ]?000')) {
+    foreach ($pattern in @('360[,. ]?000')) {
         if ([string]$strings.description -notmatch $pattern) { throw "Missing power value: $language/$pattern" }
     }
     foreach ($token in @('{source}','{target}')) {

@@ -1,1 +1,1 @@
-v0.6.1: Rename Chinese display name to 屬性晶石轉換機; bilingual Workshop title and description; process diagram cover followed by machine render. Gameplay and power balance unchanged.
+v0.6.2: Fixed native electricity consumption of 360,000/s in both idle and operation. Removed periodic object discovery and energy rewriting. Work lights respond to native events. New power balance and event-driven visuals await in-game verification. / 待機及運轉固定耗電 360,000／秒，交給原版扣電；移除定期掃描及耗電重寫。

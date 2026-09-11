@@ -13,7 +13,7 @@ end
 function RegisterHook(path, pre, post) hooks[path]=post; return 1,2 end
 function LoopInGameThreadWithDelay(ms, callback) assert(ms==100); loop=callback; return 1 end
 function CancelDelayedAction() end
-function FindAllOf(class) assert(class=='PalMapObjectConvertItemModel'); return discovered end
+function FindAllOf() error('global discovery prohibited') end
 local function model(name, id, authority, state, energy_present)
   local gem=object('mesh'); gem.GetFullName=function() return 'PAE_ConversionGlow_0' end
   gem.SetMaterial=function(self,_,material) self.material=material.tag end
@@ -42,16 +42,20 @@ local building,eb=model('building','PAE_ExchangePrototype',true,2,true)
 local missing,em=model('missing','PAE_ExchangePrototype',true,3,false)
 discovered={our,foreign,client,building,missing}
 local power=dofile('src/AwakeningCrystalConverterUI/Scripts/power.lua')
-loop(); assert(e.ConsumeEnergySpeed==36000 and e.CurrentConsumeEnergySpeed==36000)
-assert(e.bRequiredConsumeEnergy and g.material=='idle')
-our.remain=2; loop(); assert(e.CurrentConsumeEnergySpeed==576000 and g.material=='working')
-e.powered=false; loop(); assert(e.CurrentConsumeEnergySpeed==576000 and g.material=='idle')
-e.powered=true; loop(); assert(g.material=='working')
-our.remain=0; hooks['/Script/Pal.PalMapObjectConvertItemModel:Cancel_ServerInternal']({get=function()return our end})
-assert(e.CurrentConsumeEnergySpeed==36000 and g.material=='idle')
-our.remain=1; loop(); assert(g.material=='working')
-our.remain=0; hooks['/Script/Pal.PalMapObjectConvertItemModel:OnFinishWorkInServer']({get=function()return our end})
-assert(e.CurrentConsumeEnergySpeed==36000 and g.material=='idle')
-for _,v in ipairs({ef,ec,eb,em}) do assert(v.ConsumeEnergySpeed==nil,'guard failed') end
-power.stop(); our.remain=1; loop(); assert(e.CurrentConsumeEnergySpeed==36000)
-print('PASS shipped power.lua: idle, work, no power, resume, cancel, finish, repeated visual transitions, foreign/client/construction/missing-module guards, stop')
+assert(loop==nil, 'must not register recurring work')
+local function event(name, target)
+ hooks['/Script/Pal.PalMapObjectConvertItemModel:'..name]({get=function()return target or our end})
+end
+-- Treat any attempt to write energy fields as a regression.
+for _,energy in ipairs({e,ef,ec,eb,em}) do
+ setmetatable(energy,{__newindex=function() error('native energy must not be mutated') end})
+end
+event('OnReadyStatusHUDModule'); assert(g.material=='idle')
+our.remain=2;event('ChangeRecipe_ServerInternal');assert(g.material=='working')
+e.powered=false;event('OnUpdateEnergyModuleState');assert(g.material=='idle')
+e.powered=true;event('OnUpdateEnergyModuleState');assert(g.material=='working')
+our.remain=0;event('Cancel_ServerInternal');assert(g.material=='idle')
+our.remain=1;event('OnStartWorkAnyone_ServerInternal');assert(g.material=='working')
+our.remain=0;event('OnFinishWorkInServer');assert(g.material=='idle')
+for _,m in ipairs({foreign,client,building,missing}) do event('OnReadyStatusHUDModule',m) end
+print('PASS native power untouched; no recurring loop; work/light, outage, recovery, cancel, completion and load events')
