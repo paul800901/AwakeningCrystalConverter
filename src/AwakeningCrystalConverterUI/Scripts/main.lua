@@ -1,6 +1,6 @@
 -- UI only. The original converter owns material consumption, quantity,
 -- completion and collection. The separate power module controls energy only.
-local VERSION = "0.6.0"
+local VERSION = "0.6.1"
 local MACHINE_ID = "PAE_ExchangePrototype"
 local MENU_CLASS = "/Game/Pal/Blueprint/UI/UserInterface/IngameMenu/WBP_IngameMenu_WorkSpace.WBP_IngameMenu_WorkSpace_C"
 local CLICK_PATH = "/Script/UMG.Widget:SetKeyboardFocus"

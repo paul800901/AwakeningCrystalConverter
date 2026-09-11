@@ -1,1 +1,1 @@
-v0.6.0 public preview: 1:1 Awakening Crystal exchanges; 36,000/s idle and 576,000/s operating power; wafer machine artwork; 17 localized interfaces; test construction entries removed. Single-player core flows user-tested; language layouts, multiplayer and dedicated servers not fully verified.
+v0.6.1: Rename Chinese display name to 屬性晶石轉換機; bilingual Workshop title and description; process diagram cover followed by machine render. Gameplay and power balance unchanged.

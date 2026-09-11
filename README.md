@@ -1,6 +1,6 @@
 # Awakening Crystal Converter
 
-大後期的晶圓兌換機：九屬性覺醒晶石 1：1 互換，以極高電力需求換取每秒一顆的便利。
+大後期的屬性晶石轉換機：九屬性覺醒晶石 1：1 互換，以極高電力需求換取每秒一顆的便利。
 
 ![Crystal Wafer Converter](art/blender/previews/hero.png)
 

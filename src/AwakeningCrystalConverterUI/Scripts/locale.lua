@@ -27,7 +27,7 @@ M.aliases = {
 }
 M.data = {
     ["en"] = {
-        machine_name = "Crystal Wafer Converter",
+        machine_name = "Awakening Crystal Converter",
         description = "Exchange Awakening Crystals between nine elements at a 1:1 ratio. Produces one crystal per second while powered. Idle power: 36,000/s; total operating power: 576,000/s. Pauses without power and resumes when power returns.",
         receive = "Receive ",
         payment_prompt = "Click a crystal below to spend, then set the quantity",
@@ -47,7 +47,7 @@ M.data = {
         },
     },
     ["zh-Hans"] = {
-        machine_name = "晶圆兑换机",
+        machine_name = "属性晶石转换机",
         description = "将九种属性的觉醒晶石以 1：1 互相兑换，供电充足时每秒完成一颗。待机耗电 36,000／秒；运转时总耗电 576,000／秒。停电暂停，恢复供电后继续。",
         receive = "想取得 ",
         payment_prompt = "点选下方要消耗的晶石，再设定兑换数量",
@@ -67,7 +67,7 @@ M.data = {
         },
     },
     ["zh-Hant"] = {
-        machine_name = "晶圓兌換機",
+        machine_name = "屬性晶石轉換機",
         description = "將九種屬性的覺醒晶石以 1：1 互相兌換，供電充足時每秒完成一顆。待機耗電 36,000／秒；運轉時總耗電 576,000／秒。停電暫停，恢復供電後繼續。",
         receive = "想取得 ",
         payment_prompt = "點選下方要消耗的晶石，再設定兌換數量",

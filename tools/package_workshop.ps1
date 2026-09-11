@@ -25,9 +25,9 @@ foreach($entry in $modules.GetEnumerator()) {
 }
 foreach($file in @('LICENSE','THIRD_PARTY_NOTICES.md','README.md')) { Copy-Item -LiteralPath (Join-Path $root $file) -Destination (Join-Path $out $file) }
 foreach($file in @('DESCRIPTION.txt','CHANGELOG.txt')) { Copy-Item -LiteralPath (Join-Path $root "workshop/$file") -Destination (Join-Path $out $file) }
-Copy-Item -LiteralPath (Join-Path $root 'workshop/media/thumbnail.jpg') -Destination (Join-Path $out 'thumbnail.jpg')
+Copy-Item -LiteralPath (Join-Path $root 'workshop/media/flow-cover.jpg') -Destination (Join-Path $out 'thumbnail.jpg')
 $info=[ordered]@{
-    ModName='Awakening Crystal Converter';PackageName='AwakeningCrystalConverter';Thumbnail='thumbnail.jpg'
+    ModName=([IO.File]::ReadAllText((Join-Path $root 'workshop/TITLE.txt')).Trim());PackageName='AwakeningCrystalConverter';Thumbnail='thumbnail.jpg'
     Version=$version;DebugMode=$false;MinRevision=102642;Author='paul800901'
     Dependencies=@('UE4SSExperimentalPW','PalSchema');Tags=@('UE4SS','PalSchema','Gameplay')
     InstallRule=@(@{Type='UE4SS';Targets=@('./Mods')})

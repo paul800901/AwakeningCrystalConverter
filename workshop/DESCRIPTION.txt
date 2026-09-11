@@ -1,4 +1,46 @@
-[h1]晶圓兌換機[/h1]
+[h1]Awakening Crystal Converter[/h1]
+Late-game convenience, less grinding, and a very large electricity bill.
+Advanced wafer fabrication for crystal conversion (X). Giving your hands a break while your base's power grid works overtime (O).
+Convenience comes at a price: level 74 and an extremely demanding power budget.
+Exchange Awakening Crystals between all nine elements at a [b]1:1 ratio[/b]. With power available, each conversion takes one second. Redistribute your late-game stockpile without creating extra crystals.
+
+[h2]Warning: enormous operating power consumption[/h2]
+[list]
+[*][b]Idle: 36,000 per second.[/b] The building draws power even without an exchange order.
+[*][b]Operating total: 576,000 per second.[/b] This includes idle consumption; do not add it again. Equivalent to 192 devices drawing 3,000 per second each.
+[*]Power loss pauses conversion; restoring power resumes it. Completing or cancelling an order returns the machine to idle consumption.
+[/list]
+[b]Author's test: a Pal with maximum work speed and maximum electricity work suitability, paired with a Large Power Generator, could only just keep up.[/b]
+That base also contained 20 oil extractors drawing 3,000/s each, both Pal Resource Factory buildings, and other vanilla buildings. This is a whole-base observation, not a standalone power guarantee for this machine. Stored power can drop rapidly while the Pal eats or leaves its post.
+Prepare substantial generation and storage. An Ancient Civilization Power Generator or multiple generators are potential upgrades; the actual balance depends on Pal capabilities, work uptime, and total base demand.
+
+[h2]Unlock and use[/h2]
+[list]
+[*]Normal Technology, level 74, 3 Technology Points, beside the Ancient Civilization Relic Converter.
+[*]Materials: 150 World Tree Ingots, 150 mysterious wood (Wood_WorldTree), 90 Ancient Civilization Parts, and 60 Ancient Civilization Cores.
+[*]Choose the element you want to receive, then select the crystals to spend and the quantity.
+[*]No working or stored Pal required; the machine uses base electricity directly.
+[/list]
+
+[h2]Installation[/h2]
+[olist]
+[*]Subscribe to [url=https://steamcommunity.com/workshop/filedetails/?id=3625223587]UE4SS Experimental (Palworld)[/url], [url=https://steamcommunity.com/workshop/filedetails/?id=3625280368]PalSchema[/url], and this mod.
+[*]Enable all three in the game's mod manager and fully restart the game.
+[*]Unlock the technology, then press B inside your base to build it.
+[/olist]
+Avoid keeping duplicate manual and Workshop installations of this mod.
+
+[h2]Languages and tested scope[/h2]
+17 interface languages follow the game language. Fully restart after changing languages. Names, descriptions, and exchange menus display one language at a time; lettering on the machine remains unchanged.
+Tested on Windows Steam Palworld 1.0.4.102642. Single-player exchange, partial cancellation and collection, completed orders across restarts, demolition returns, power interruption/resumption, and power balance have been accepted in author testing. All 17 languages passed local completeness checks; their in-game layouts have not each been verified. Multiplayer and dedicated servers are unverified.
+Before uninstalling, back up your save, collect your items, and dismantle the mod's buildings while the mod is still enabled.
+
+[h2]Open source[/h2]
+[url=https://github.com/paul800901/AwakeningCrystalConverter]GitHub source, Blender models, and issue reports[/url]. Original code and models are MIT licensed. Unofficial; not a Pocketpair mod.
+
+[hr][/hr]
+
+[h1]屬性晶石轉換機[/h1]
 大後期降肝專用。高階晶圓製程協助晶石轉換（X），把你的肝省下來，交給基地電網加班（O）。
 方便歸方便，代價還是要付：74 級才開放，還得供得起這台吃電怪獸。
 將九種屬性的覺醒晶石以 1：1 互相兌換。供電充足時每秒完成一顆，方便調整後期晶石庫存；不會憑空增加晶石數量。

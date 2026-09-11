@@ -82,7 +82,7 @@ public class Program
                         "Media ownership/app check");
                     var previous = Media(mediaId);
                     string folder = Path.GetFullPath(args[1]);
-                    string[] names = { "flow-cover.jpg", "processor.jpg", "breeder.jpg" };
+                    string[] names = { "flow-cover.jpg", "machine.jpg" };
                     foreach (string name in names) {
                         var file = new FileInfo(Path.Combine(folder, name));
                         Check(file.Exists && file.Length > 0 && file.Length < 1000000, "Image size: " + name);
@@ -96,7 +96,7 @@ public class Program
                             : SteamUGC.UpdateItemPreviewFile(edit, (uint)index, file), "Set gallery: " + names[i]);
                     }
                     var mediaUpload = Await<SubmitItemUpdateResult_t>(SteamUGC.SubmitItemUpdate(edit,
-                        "Images only: text-free process flow cover and both building previews; game files unchanged."));
+                        "Images only: process flow cover and machine preview; game files unchanged."));
                     Check(mediaUpload.m_eResult, "Media upload");
                     if (mediaUpload.m_bUserNeedsToAcceptWorkshopLegalAgreement) throw new Exception("Workshop legal agreement required.");
                     var after = Details(mediaId);
@@ -104,8 +104,7 @@ public class Program
                     Check(after.m_nFileSize == before.m_nFileSize && after.m_rgchDescription == before.m_rgchDescription &&
                         after.m_rgchTitle == before.m_rgchTitle && after.m_eVisibility == before.m_eVisibility,
                         "Media-only readback");
-                    Check(media.Extra.Exists(p => Path.GetFileName(p.Name) == names[1]) &&
-                        media.Extra.Exists(p => Path.GetFileName(p.Name) == names[2]), "Both buildings readback");
+                    Check(media.Extra.Count == 1 && Path.GetFileName(media.Extra[0].Name) == names[1], "Machine gallery order readback");
                     Console.WriteLine(JsonSerializer.Serialize(new { Item=mediaId, Cover=media.Cover,
                         Gallery=media.Extra.ConvertAll(p => new { p.Name, p.Url }), Bytes=after.m_nFileSize }));
                     return 0;
@@ -152,7 +151,8 @@ public class Program
                 }
                 var existing = Details(id);
                 Check(existing.m_nConsumerAppID.m_AppId == Palworld && existing.m_ulSteamIDOwner == SteamUser.GetSteamID().m_SteamID, "Item ownership/app check");
-                if (!string.IsNullOrEmpty(existing.m_rgchTitle) && existing.m_rgchTitle != title)
+                if (!string.IsNullOrEmpty(existing.m_rgchTitle) && existing.m_rgchTitle != title &&
+                    !(id == 3799465517 && existing.m_rgchTitle == "Awakening Crystal Converter" && title == "Awakening Crystal Converter / 屬性晶石轉換機"))
                     throw new Exception("Receipt points to a differently titled item; refusing overwrite.");
                 foreach (ulong dep in new ulong[] { 3625223587, 3625280368 })
                 {
