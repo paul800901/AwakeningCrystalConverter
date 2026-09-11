@@ -1,0 +1,23 @@
+{
+  "PAE_ContainmentProbe": {
+    "Name": "封裝保管台",
+    "Description": "供舊存檔取回已存入的帕魯。",
+    "BlueprintClassName": "BP_PAE_ContainmentProbe",
+    "BlueprintClassSoft": "/Game/PalAwakeningExchange/BP_PAE_ContainmentProbe.BP_PAE_ContainmentProbe_C",
+    "IconTexture": "/Game/Pal/Texture/BuildObject/PNG/T_icon_buildObject_DisplayCharacter.T_icon_buildObject_DisplayCharacter",
+    "Hp": 1000,
+    "Defense": 1,
+    "MaterialType": "Stone",
+    "MaterialSubType": "Stone",
+    "bBelongToBaseCamp": true,
+    "Assignments": [
+      {
+        "WorkSuitability": "None",
+        "bPlayerWorkable": false,
+        "bBaseCampWorkerWorkable": false,
+        "WorkType": "None",
+        "WorkActionType": "None"
+      }
+    ]
+  }
+}

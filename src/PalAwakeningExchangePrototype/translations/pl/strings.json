@@ -1,0 +1,14 @@
+{
+  "DT_MapObjectNameText": {
+    "MAPOBJECT_NAME_PAE_ExchangePrototype": "Konwerter kryształów przebudzenia"
+  },
+  "DT_BuildObjectDescText": {
+    "BUILDOBJECT_DESC_PAE_ExchangePrototype": "Wymienia kryształy przebudzenia między dziewięcioma żywiołami w stosunku 1:1. Przy zasilaniu wytwarza jeden kryształ na sekundę. Pobór w trybie czuwania: 36 000/s; całkowity pobór podczas pracy: 576 000/s. Bez prądu zatrzymuje się i wznawia pracę po jego powrocie."
+  },
+  "DT_TechnologyNameText": {
+    "NAME_RECIPE_PAE_ExchangePrototype": "Konwerter kryształów przebudzenia"
+  },
+  "DT_TechnologyDescText": {
+    "DESC_RECIPE_PAE_ExchangePrototype": "Wymienia kryształy przebudzenia między dziewięcioma żywiołami w stosunku 1:1. Przy zasilaniu wytwarza jeden kryształ na sekundę. Pobór w trybie czuwania: 36 000/s; całkowity pobór podczas pracy: 576 000/s. Bez prądu zatrzymuje się i wznawia pracę po jego powrocie."
+  }
+}

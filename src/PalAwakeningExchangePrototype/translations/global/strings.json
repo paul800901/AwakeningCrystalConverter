@@ -1,0 +1,14 @@
+{
+  "DT_MapObjectNameText": {
+    "MAPOBJECT_NAME_PAE_ExchangePrototype": "Crystal Wafer Converter"
+  },
+  "DT_BuildObjectDescText": {
+    "BUILDOBJECT_DESC_PAE_ExchangePrototype": "Exchange Awakening Crystals between nine elements at a 1:1 ratio. Produces one crystal per second while powered. Idle power: 36,000/s; total operating power: 576,000/s. Pauses without power and resumes when power returns."
+  },
+  "DT_TechnologyNameText": {
+    "NAME_RECIPE_PAE_ExchangePrototype": "Crystal Wafer Converter"
+  },
+  "DT_TechnologyDescText": {
+    "DESC_RECIPE_PAE_ExchangePrototype": "Exchange Awakening Crystals between nine elements at a 1:1 ratio. Produces one crystal per second while powered. Idle power: 36,000/s; total operating power: 576,000/s. Pauses without power and resumes when power returns."
+  }
+}

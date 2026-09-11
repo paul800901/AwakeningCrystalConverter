@@ -1,0 +1,14 @@
+{
+  "DT_MapObjectNameText": {
+    "MAPOBJECT_NAME_PAE_ExchangePrototype": "Conversor de Cristais do Despertar"
+  },
+  "DT_BuildObjectDescText": {
+    "BUILDOBJECT_DESC_PAE_ExchangePrototype": "Troca Cristais do Despertar entre nove elementos na proporção de 1:1. Produz um cristal por segundo quando energizado. Consumo em espera: 36.000/s; consumo total em operação: 576.000/s. Pausa sem energia e retoma quando ela volta."
+  },
+  "DT_TechnologyNameText": {
+    "NAME_RECIPE_PAE_ExchangePrototype": "Conversor de Cristais do Despertar"
+  },
+  "DT_TechnologyDescText": {
+    "DESC_RECIPE_PAE_ExchangePrototype": "Troca Cristais do Despertar entre nove elementos na proporção de 1:1. Produz um cristal por segundo quando energizado. Consumo em espera: 36.000/s; consumo total em operação: 576.000/s. Pausa sem energia e retoma quando ela volta."
+  }
+}

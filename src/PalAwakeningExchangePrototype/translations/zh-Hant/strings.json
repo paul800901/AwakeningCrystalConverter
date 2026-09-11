@@ -1,0 +1,14 @@
+{
+  "DT_MapObjectNameText": {
+    "MAPOBJECT_NAME_PAE_ExchangePrototype": "晶圓兌換機"
+  },
+  "DT_BuildObjectDescText": {
+    "BUILDOBJECT_DESC_PAE_ExchangePrototype": "將九種屬性的覺醒晶石以 1：1 互相兌換，供電充足時每秒完成一顆。待機耗電 36,000／秒；運轉時總耗電 576,000／秒。停電暫停，恢復供電後繼續。"
+  },
+  "DT_TechnologyNameText": {
+    "NAME_RECIPE_PAE_ExchangePrototype": "晶圓兌換機"
+  },
+  "DT_TechnologyDescText": {
+    "DESC_RECIPE_PAE_ExchangePrototype": "將九種屬性的覺醒晶石以 1：1 互相兌換，供電充足時每秒完成一顆。待機耗電 36,000／秒；運轉時總耗電 576,000／秒。停電暫停，恢復供電後繼續。"
+  }
+}

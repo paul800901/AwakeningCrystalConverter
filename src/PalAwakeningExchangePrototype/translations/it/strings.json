@@ -1,0 +1,14 @@
+{
+  "DT_MapObjectNameText": {
+    "MAPOBJECT_NAME_PAE_ExchangePrototype": "Convertitore di cristalli del risveglio"
+  },
+  "DT_BuildObjectDescText": {
+    "BUILDOBJECT_DESC_PAE_ExchangePrototype": "Scambia i cristalli del risveglio tra nove elementi con rapporto 1:1. Produce un cristallo al secondo quando è alimentato. Consumo in attesa: 36.000/s; consumo totale in funzione: 576.000/s. Si arresta senza energia e riprende quando torna."
+  },
+  "DT_TechnologyNameText": {
+    "NAME_RECIPE_PAE_ExchangePrototype": "Convertitore di cristalli del risveglio"
+  },
+  "DT_TechnologyDescText": {
+    "DESC_RECIPE_PAE_ExchangePrototype": "Scambia i cristalli del risveglio tra nove elementi con rapporto 1:1. Produce un cristallo al secondo quando è alimentato. Consumo in attesa: 36.000/s; consumo totale in funzione: 576.000/s. Si arresta senza energia e riprende quando torna."
+  }
+}

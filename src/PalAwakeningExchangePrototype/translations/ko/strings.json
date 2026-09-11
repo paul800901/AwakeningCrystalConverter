@@ -1,0 +1,14 @@
+{
+  "DT_MapObjectNameText": {
+    "MAPOBJECT_NAME_PAE_ExchangePrototype": "각성 결정 변환기"
+  },
+  "DT_BuildObjectDescText": {
+    "BUILDOBJECT_DESC_PAE_ExchangePrototype": "9가지 속성의 각성 결정을 1:1 비율로 교환합니다. 전력이 공급되면 초당 결정 1개를 생산합니다. 대기 전력: 36,000/초, 작동 중 총 전력: 576,000/초. 정전 시 일시 정지하고 전력이 복구되면 재개합니다."
+  },
+  "DT_TechnologyNameText": {
+    "NAME_RECIPE_PAE_ExchangePrototype": "각성 결정 변환기"
+  },
+  "DT_TechnologyDescText": {
+    "DESC_RECIPE_PAE_ExchangePrototype": "9가지 속성의 각성 결정을 1:1 비율로 교환합니다. 전력이 공급되면 초당 결정 1개를 생산합니다. 대기 전력: 36,000/초, 작동 중 총 전력: 576,000/초. 정전 시 일시 정지하고 전력이 복구되면 재개합니다."
+  }
+}

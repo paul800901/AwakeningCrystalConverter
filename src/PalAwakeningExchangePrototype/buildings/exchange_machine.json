@@ -1,0 +1,53 @@
+{
+  "PAE_ExchangePrototype": {
+    "Name": "晶圓兌換機",
+    "Description": "將九種屬性的覺醒晶石以 1：1 互相兌換，供電充足時每秒完成一顆。待機耗電 36,000／秒；運轉時總耗電 576,000／秒。停電暫停，恢復供電後繼續。",
+    "BlueprintClassName": "BP_PAE_ExchangePrototype",
+    "BlueprintClassSoft": "/Game/PalAwakeningExchange/BP_PAE_ExchangePrototype.BP_PAE_ExchangePrototype_C",
+    "IconTexture": "/Game/PalAwakeningExchange/WaferV2/T_PAE_ConverterIcon.T_PAE_ConverterIcon",
+    "Hp": 1000,
+    "Defense": 1,
+    "MaterialType": "Stone",
+    "MaterialSubType": "Stone",
+    "bBelongToBaseCamp": true,
+    "BuildingData": {
+      "TypeA": "Product",
+      "TypeB": "Prod_Craft",
+      "TypeUIDisplay": "Milling_Crusher",
+      "Rank": 1,
+      "RequiredBuildWorkAmount": 1000000,
+      "RequiredEnergyType": "Electric",
+      "ConsumeEnergySpeed": 36000,
+      "bIsInstallOnlyOnBase": true,
+      "Material1_Id": "WorldTreeIngot",
+      "Material1_Count": 150,
+      "Material2_Id": "Wood_WorldTree",
+      "Material2_Count": 150,
+      "Material3_Id": "PalCrystal_Ex",
+      "Material3_Count": 90,
+      "Material4_Id": "AncientParts2",
+      "Material4_Count": 60
+    },
+    "Assignments": [
+      {
+        "WorkSuitability": "None",
+        "bPlayerWorkable": false,
+        "bBaseCampWorkerWorkable": false,
+        "WorkType": "ConvertItem",
+        "WorkActionType": "None"
+      }
+    ],
+    "Technology": {
+      "Name": "晶圓兌換機",
+      "Description": "將九種屬性的覺醒晶石以 1：1 互相兌換，供電充足時每秒完成一顆。待機耗電 36,000／秒；運轉時總耗電 576,000／秒。停電暫停，恢復供電後繼續。",
+      "UnlockBuildObjects": [
+        "PAE_ExchangePrototype"
+      ],
+      "IconName": "PAE_ExchangePrototype",
+      "IsBossTechnology": false,
+      "LevelCap": 74,
+      "Cost": 3,
+      "Tier": 0
+    }
+  }
+}

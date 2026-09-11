@@ -1,0 +1,14 @@
+{
+  "DT_MapObjectNameText": {
+    "MAPOBJECT_NAME_PAE_ExchangePrototype": "Uyanış Kristali Dönüştürücü"
+  },
+  "DT_BuildObjectDescText": {
+    "BUILDOBJECT_DESC_PAE_ExchangePrototype": "Dokuz element arasındaki Uyanış Kristallerini 1:1 oranında dönüştürür. Güç varken saniyede bir kristal üretir. Bekleme gücü: 36.000/sn; çalışırken toplam güç: 576.000/sn. Elektrik kesilince duraklar ve güç geri gelince devam eder."
+  },
+  "DT_TechnologyNameText": {
+    "NAME_RECIPE_PAE_ExchangePrototype": "Uyanış Kristali Dönüştürücü"
+  },
+  "DT_TechnologyDescText": {
+    "DESC_RECIPE_PAE_ExchangePrototype": "Dokuz element arasındaki Uyanış Kristallerini 1:1 oranında dönüştürür. Güç varken saniyede bir kristal üretir. Bekleme gücü: 36.000/sn; çalışırken toplam güç: 576.000/sn. Elektrik kesilince duraklar ve güç geri gelince devam eder."
+  }
+}

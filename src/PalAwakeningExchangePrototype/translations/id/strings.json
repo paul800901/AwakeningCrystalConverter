@@ -1,0 +1,14 @@
+{
+  "DT_MapObjectNameText": {
+    "MAPOBJECT_NAME_PAE_ExchangePrototype": "Konverter Kristal Kebangkitan"
+  },
+  "DT_BuildObjectDescText": {
+    "BUILDOBJECT_DESC_PAE_ExchangePrototype": "Menukar Kristal Kebangkitan dari sembilan elemen dengan rasio 1:1. Menghasilkan satu kristal per detik saat dialiri daya. Daya siaga: 36.000/detik; total daya operasi: 576.000/detik. Berhenti saat listrik padam dan melanjutkan saat daya pulih."
+  },
+  "DT_TechnologyNameText": {
+    "NAME_RECIPE_PAE_ExchangePrototype": "Konverter Kristal Kebangkitan"
+  },
+  "DT_TechnologyDescText": {
+    "DESC_RECIPE_PAE_ExchangePrototype": "Menukar Kristal Kebangkitan dari sembilan elemen dengan rasio 1:1. Menghasilkan satu kristal per detik saat dialiri daya. Daya siaga: 36.000/detik; total daya operasi: 576.000/detik. Berhenti saat listrik padam dan melanjutkan saat daya pulih."
+  }
+}

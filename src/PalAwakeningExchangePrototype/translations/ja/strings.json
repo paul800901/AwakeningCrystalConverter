@@ -1,0 +1,14 @@
+{
+  "DT_MapObjectNameText": {
+    "MAPOBJECT_NAME_PAE_ExchangePrototype": "覚醒晶石交換機"
+  },
+  "DT_BuildObjectDescText": {
+    "BUILDOBJECT_DESC_PAE_ExchangePrototype": "9属性の覚醒晶石を1:1で交換します。通電中は1秒に1個を生産します。待機時の消費電力は36,000/秒、稼働時の総消費電力は576,000/秒です。停電中は停止し、復電すると再開します。"
+  },
+  "DT_TechnologyNameText": {
+    "NAME_RECIPE_PAE_ExchangePrototype": "覚醒晶石交換機"
+  },
+  "DT_TechnologyDescText": {
+    "DESC_RECIPE_PAE_ExchangePrototype": "9属性の覚醒晶石を1:1で交換します。通電中は1秒に1個を生産します。待機時の消費電力は36,000/秒、稼働時の総消費電力は576,000/秒です。停電中は停止し、復電すると再開します。"
+  }
+}
