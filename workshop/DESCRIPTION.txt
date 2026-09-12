@@ -32,7 +32,7 @@ Tested on Windows Steam Palworld 1.0.4.102642. Single-player exchange, partial c
 Before uninstalling, back up your save, collect your items, and dismantle the mod's buildings while the mod is still enabled.
 
 [h2]Open source[/h2]
-[url=https://github.com/paul800901/AwakeningCrystalConverter]GitHub source, Blender models, and issue reports[/url]. Original code and models are MIT licensed. Unofficial; not a Pocketpair mod.
+[url=https://github.com/paul800901/AwakeningCrystalConverter]GitHub source and Blender models[/url]. Original code and models are MIT licensed. Unofficial; not a Pocketpair mod.
 
 [h2]Issue reports[/h2]
 [url=https://discord.gg/Cv94zj2BB]Discord[/url] · [url=https://github.com/paul800901/AwakeningCrystalConverter/issues]GitHub[/url]
@@ -73,7 +73,7 @@ v0.6.2 已改為固定耗電，先前兩段耗電的發電機實測不代表新�
 移除模組前請備份存檔、取回物品，並在模組仍啟用時拆除其建築。
 
 [h2]開源[/h2]
-[url=https://github.com/paul800901/AwakeningCrystalConverter]GitHub 原始碼、Blender 模型與問題回報[/url]。原創程式碼與模型採 MIT 授權。非 Pocketpair 官方模組。
+[url=https://github.com/paul800901/AwakeningCrystalConverter]GitHub 原始碼與 Blender 模型[/url]。原創程式碼與模型採 MIT 授權。非 Pocketpair 官方模組。
 
 [h2]問題回報[/h2]
 [url=https://discord.gg/Cv94zj2BB]Discord「帕魯模組問題回報」[/url] · [url=https://github.com/paul800901/AwakeningCrystalConverter/issues]GitHub[/url]
