@@ -45,3 +45,9 @@ Windows Steam Palworld 1.0.4.102642 的單人核心流程已獲使用者實測�
 ```
 
 原創程式碼、Blender 模型與美術採 [MIT](LICENSE) 授權。遊戲與第三方權利請見 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。非 Pocketpair 官方產品。
+
+## 問題回報 / Issue reports
+
+一般使用者可直接加入 [Discord「帕魯模組問題回報」](https://discord.gg/Cv94zj2BB)，也可使用本專案的 [GitHub Issues](https://github.com/paul800901/AwakeningCrystalConverter/issues)。請附模組名稱、Palworld 版本、模組版本、單人／多人／專用伺服器環境、重現步驟，以及相關 `UE4SS.log` 片段。請勿公開密碼、帳號資料或完整私人路徑。
+
+General users can join [Palworld Mod Issue Reports on Discord](https://discord.gg/Cv94zj2BB), or use this project's [GitHub Issues](https://github.com/paul800901/AwakeningCrystalConverter/issues). Include the mod name, Palworld version, mod version, single-player/multiplayer/dedicated-server environment, reproduction steps, and relevant `UE4SS.log` excerpts. Do not post passwords, account information, or full private paths.
