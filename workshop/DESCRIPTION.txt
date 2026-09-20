@@ -8,7 +8,7 @@ Exchange Awakening Crystals between all nine elements at a [b]1:1 ratio[/b]. Wit
 [b]Fixed consumption: 360,000 per second, both idle and operating.[/b]
 Equivalent to 120 devices drawing 3,000/s each. There is no cheaper standby mode: simply keeping this machine built puts pressure on the base power grid.
 The original game's energy system handles consumption. Power loss pauses conversion; restoring power resumes it. Prepare substantial generation and storage. Actual power balance depends on Pal capabilities, work uptime, and all other base buildings.
-v0.6.2 replaces the previous two-rate design. Previous generator balance observations do not establish the balance of this new fixed rate; in-game validation is pending.
+v0.6.3 adds the SM6 shader path required by forced DirectX 12, fixing the beige/checkerboard fallback materials seen with `-dx12`. The intended appearance and normal conversion were confirmed in local single-player on Windows Steam Palworld 1.0.5.102999.
 
 [h2]Unlock and use[/h2]
 [list]
@@ -28,7 +28,7 @@ Avoid keeping duplicate manual and Workshop installations of this mod.
 
 [h2]Languages and tested scope[/h2]
 17 interface languages follow the game language. Fully restart after changing languages. Names, descriptions, and exchange menus display one language at a time; lettering on the machine remains unchanged.
-Tested on Windows Steam Palworld 1.0.4.102642. Single-player exchange, partial cancellation and collection, completed orders across restarts, demolition returns, power interruption/resumption, and power balance have been accepted in author testing. All 17 languages passed local completeness checks; their in-game layouts have not each been verified. Multiplayer and dedicated servers are unverified.
+Core behavior was tested on Windows Steam Palworld 1.0.4.102642. Forced DirectX 12 materials and normal conversion were confirmed in local single-player on Palworld 1.0.5.102999. All 17 languages passed local completeness checks; their in-game layouts have not each been verified. FPS, multiplayer and dedicated servers are unverified.
 Before uninstalling, back up your save, collect your items, and dismantle the mod's buildings while the mod is still enabled.
 
 [h2]Open source[/h2]
@@ -49,7 +49,7 @@ Include mod/version, Palworld, mode, steps, UE4SS.log. No private data.
 [b]待機與運轉均固定耗電 360,000／秒。[/b]
 相當於 120 台每秒耗電 3,000 的設備。沒有較便宜的待機模式：光是放在基地裡，就會持續帶來供電壓力。
 由原版能源系統扣電；缺電暫停轉換，恢復供電後繼續。請準備充足發電與蓄電能力，實際收支取決於帕魯能力、工作狀態及基地其他設備。
-v0.6.2 已改為固定耗電，先前兩段耗電的發電機實測不代表新版平衡；這個固定數值仍待遊戲內驗證。
+v0.6.3 加入強制 DirectX 12 所需的 SM6 shader，修正 `-dx12` 下出現的米黃色／棋盤格備援材質。已在 Windows Steam Palworld 1.0.5.102999 的本機單人遊戲確認外觀與兌換正常。
 
 [h2]解鎖與使用[/h2]
 [list]
@@ -69,7 +69,7 @@ v0.6.2 已改為固定耗電，先前兩段耗電的發電機實測不代表新�
 
 [h2]語言與測試範圍[/h2]
 17 種介面語言隨遊戲語言切換；改語言後請完整重啟。名稱、介紹與兌換選單採單一語言顯示，機身字樣不變。
-以 Windows Steam 版 Palworld 1.0.4.102642 測試。單人環境的兌換、中途取消與領取、完工未領重開、拆除返還、斷電恢復與耗電平衡已獲作者實測接受。17 語言已做本機完整性檢查，尚未逐一驗證遊戲版面；多人與專用伺服器未驗證。
+核心流程以 Windows Steam 版 Palworld 1.0.4.102642 測試；Palworld 1.0.5.102999 已確認強制 DirectX 12 的材質與兌換正常。17 語言已做本機完整性檢查，尚未逐一驗證遊戲版面；FPS、多人與專用伺服器未驗證。
 移除模組前請備份存檔、取回物品，並在模組仍啟用時拆除其建築。
 
 [h2]開源[/h2]

@@ -44,6 +44,9 @@ GameDefaultMap=/Engine/Maps/Entry
 
 [/Script/Engine.RendererSettings]
 r.AllowStaticLighting=False
+
+[/Script/WindowsTargetPlatform.WindowsTargetSettings]
++D3D12TargetedShaderFormats=PCD3D_SM6
 '@ | Set-Content -LiteralPath (Join-Path $editorRoot 'Config\DefaultEngine.ini') -Encoding utf8
     @'
 [/Script/UnrealEd.ProjectPackagingSettings]
