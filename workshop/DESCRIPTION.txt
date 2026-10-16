@@ -35,8 +35,7 @@ Before uninstalling, back up your save, collect your items, and dismantle the mo
 [url=https://github.com/paul800901/AwakeningCrystalConverter]GitHub source and Blender models[/url]. Original code and models are MIT licensed. Unofficial; not a Pocketpair mod.
 
 [h2]Issue reports[/h2]
-[url=https://discord.gg/Swzj4UjejE]Discord[/url] · [url=https://github.com/paul800901/AwakeningCrystalConverter/issues]GitHub[/url]
-Include mod/version, Palworld, mode, steps, UE4SS.log. No private data.
+General users can report issues through [url=https://discord.gg/Swzj4UjejE]Discord: Palworld Mod Issue Reports[/url] or this project's [url=https://github.com/paul800901/AwakeningCrystalConverter/issues]GitHub Issues[/url]. Include the mod name, Palworld version, mod version, environment (single-player, multiplayer or dedicated server), reproduction steps, and relevant UE4SS.log excerpts. Do not share passwords, account information or full private paths.
 
 [hr][/hr]
 
@@ -76,5 +75,4 @@ v0.6.3 加入強制 DirectX 12 所需的 SM6 shader，修正 `-dx12` 下出現�
 [url=https://github.com/paul800901/AwakeningCrystalConverter]GitHub 原始碼與 Blender 模型[/url]。原創程式碼與模型採 MIT 授權。非 Pocketpair 官方模組。
 
 [h2]問題回報[/h2]
-[url=https://discord.gg/Swzj4UjejE]Discord「帕魯模組問題回報」[/url] · [url=https://github.com/paul800901/AwakeningCrystalConverter/issues]GitHub[/url]
-請附模組／Palworld 版本、環境、步驟、UE4SS.log；勿公開私人資料。
+一般使用者可透過 [url=https://discord.gg/Swzj4UjejE]Discord「帕魯模組問題回報」[/url] 或本專案的 [url=https://github.com/paul800901/AwakeningCrystalConverter/issues]GitHub Issues[/url] 回報。請提供模組名稱、Palworld 版本、模組版本、環境（單人／多人／專用伺服器）、重現步驟及相關 UE4SS.log 片段。請勿公開密碼、帳號資料或完整私人路徑。
