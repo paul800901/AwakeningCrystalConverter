@@ -66,15 +66,6 @@ local function own(model)
     return ok_id and fname(id) == MACHINE_ID
 end
 
-local function has_authority(actor, key)
-    local ok, result = invoke(actor, "HasAuthority")
-    if not ok then
-        warn_once(key .. ":authority", key .. " HasAuthority unavailable; skipped")
-        return false
-    end
-    return result == true
-end
-
 local function constructed(actor, key)
     local ok, state = read(actor, "CurrentState")
     state = unwrap(state)
@@ -91,7 +82,6 @@ local function actor_of(model, key)
         warn_once(key .. ":actor", key .. " actor unavailable; skipped")
         return nil
     end
-    if not has_authority(actor, key) then return nil end
     if not constructed(actor, key) then return nil end
     return actor
 end
